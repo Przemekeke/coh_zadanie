@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="row">
+        <h3 class="col-10">Gorące Oferty</h3> 
+        <div id="sort" class="col">Sortuj: <button class="dropbtn">Cena &#9660</button>
+            <div class="dropdown-content">
+                <a id="asc" href="#">Rosnąco</a>
+                <a id="desc" href="#">Malejąco</a>
+            </div>
+        </div>
+    </div> 
+
+    <div id="main" class="container">
+        <div class="row">
+            <div class="col-xl-2">
+                <div id="modelform" > <form id="modelcheckbox"> <p>Wybierz model:</p> </form></div>
+            </div>
+            <div class="col-xl-10">
+                <div id="offers" ></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
